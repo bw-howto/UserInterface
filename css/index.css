@@ -324,7 +324,9 @@ button {
   display: flex;
   align-items: center;
 
+
 @media (max-width: 500px) {
+
   .footer p {
     width: 80%;
   }
