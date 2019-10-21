@@ -295,16 +295,37 @@ img {
   font-size: 1.3rem;
   padding: 1rem;
 }
-
+@media (max-width: 500px) {
+  .footer p {
+    width: 80%;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+Section {
+  display: flex;
+}
+Section .left {
+  width: 45%;
+}
+Section .right {
+  width: 45%;
+}
 hr {
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 header {
-  margin-top: 40px;
+  margin-top: 0;
+}
+header h1 {
+  margin: 1rem 0;
 }
 .missionSection {
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -323,13 +344,4 @@ button {
   font-size: 16px;
   display: flex;
   align-items: center;
-  
-  @media (max-width: 500px) {
-  .footer p {
-    width: 80%;
-  }
-}
-.container .home section {
-  border: 5rem;
-
 }
