@@ -323,8 +323,10 @@ button {
   font-size: 16px;
   display: flex;
   align-items: center;
-  
-  @media (max-width: 500px) {
+
+
+@media (max-width: 500px) {
+
   .footer p {
     width: 80%;
   }
