@@ -295,7 +295,11 @@ img {
   font-size: 1.3rem;
   padding: 1rem;
 }
-
+@media (max-width: 500px) {
+  .footer p {
+    width: 80%;
+  }
+}
 hr {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -323,13 +327,7 @@ button {
   font-size: 16px;
   display: flex;
   align-items: center;
-
-@media (max-width: 500px) {
-  .footer p {
-    width: 80%;
-  }
 }
 .container .home section {
   border: 5rem;
-
 }
