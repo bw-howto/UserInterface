@@ -198,6 +198,13 @@ img {
   background-color: #DE6E4B;
   width: 100%;
 }
+.headerBackground a {
+  text-decoration: none;
+  color: white;
+}
+.headerBackground .logo {
+  color: white;
+}
 .toppart {
   display: flex;
   justify-content: space-between;
@@ -330,4 +337,10 @@ button {
 }
 .container .home section {
   border: 5rem;
+}
+.ourTeamSection {
+  margin-top: 40px;
+}
+.theTeamList div {
+  margin-bottom: 100px;
 }
