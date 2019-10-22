@@ -240,6 +240,9 @@ img {
   .toppart nav {
     width: 95%;
     padding-bottom: 2%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
   }
 }
 .toppart nav a {
@@ -249,13 +252,18 @@ img {
 .toppart nav a:hover {
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  .toppart nav a {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+}
 .DL {
   border-top: 2px dashed silver;
   width: 100%;
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
   background: #F9DEC9;
   display: flex;
   flex-direction: column;
