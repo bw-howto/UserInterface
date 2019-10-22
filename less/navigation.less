@@ -52,12 +52,19 @@
         @media @mobile {
             width: 95%;
             padding-bottom: 2%;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2rem;
         }
         a{
             color: @font-color;
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
+              }
+              @media @mobile {
+                display: flex;
+                margin-bottom: 2rem;
               }
         }
 
