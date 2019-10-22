@@ -319,23 +319,80 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .Whydoyouneedlifehacks {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
 Section {
   display: flex;
   align-content: space-between;
+}
+@media (max-width: 500px) {
+  Section {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0;
+  }
+  Section h1,
+  Section h2,
+  Section p {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
 }
 Section .left {
   width: 45%;
   padding: 1rem;
   margin-left: 2%;
 }
+@media (max-width: 500px) {
+  Section .left {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+}
 Section .right {
   width: 45%;
   padding: 1rem;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  Section .right {
+    width: 100%;
+    padding: 0 0rem;
+    margin-left: 0;
+  }
+  Section .right img {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  Section .Whydoyouneedlifehacks {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 hr {
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  hr {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 header {
   margin-top: 0;
@@ -343,16 +400,56 @@ header {
 header h1 {
   margin: 1rem 0;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header h1,
+  header p {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+  }
+}
 .missionSection {
   margin-bottom: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .missionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-top: dashed 2px gray;
+  }
+  .missionSection h1,
+  .missionSection h2,
+  .missionSection p {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+  }
+}
 .buttonStyle {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .buttonStyle {
+    width: 100%;
+  }
 }
 button {
   background-color: #3A405A;
