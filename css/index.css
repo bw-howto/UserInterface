@@ -310,15 +310,21 @@ img {
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 Section {
   display: flex;
+  align-content: space-between;
 }
 Section .left {
   width: 45%;
+  padding: 1rem;
+  margin-left: 2%;
 }
 Section .right {
   width: 45%;
+  padding: 1rem;
+  margin-left: 4%;
 }
 hr {
   margin-bottom: 1rem;
@@ -345,12 +351,17 @@ button {
   background-color: #3A405A;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 2 rem;
   display: flex;
   align-items: center;
+  margin: 2%;
+}
+button a {
+  color: white;
+  text-decoration: none;
 }
 .container .home section {
   border: 5rem;
