@@ -7,27 +7,80 @@
   align-items: center;
 
 }
-Section{
+@media @mobile {
+  .Whydoyouneedlifehacks{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h1,h2{
+    text-align: center;
+  }
+}
+
+
+Section {
   display: flex;
   align-content: space-between;
+  @media @mobile {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0;
+    
+    
+
+    h1,h2,p{
+      width: 100%;
+      padding: 0 1rem;
+      margin:  1rem 0;     
+    }
+
+  }
 
   .left{
     width: 45%;
     padding: 1rem;
     margin-left: 2%;
+    @media @mobile {
+      width: 100%;
+      padding: 0;
+    margin-left: 0;
+    }
   }
   .right{
     width: 45%;
     padding: 1rem;
     margin-left: 4%;
+    @media @mobile {
+      width: 100%;
+      padding: 0 0rem;
+      margin-left: 0;
+      img{
+        width: 100%;
+        padding: 0;
+      }
+    }
   }
 
 }
 
+Section .Whydoyouneedlifehacks{
+  @media @mobile {
+  display: flex;
+  flex-direction: column-reverse;
+  }
+}
 
 hr {
   margin-bottom: 1rem;
   margin-top: 1rem;
+  @media @mobile {
+    margin-bottom: 0;
+  margin-top: 0;
+
+  }
 }
 
 
@@ -37,6 +90,21 @@ header {
   h1{
     margin: 1rem 0;
   }
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    h1,p{
+      width: 100%;
+      padding: 1rem  1.0rem 0 1rem;
+      margin:  0;
+      
+    }
+  }
+
 }
 
 .missionSection {
@@ -44,12 +112,31 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-top: dashed 2px gray;
+    h1,h2,p{
+      width: 100%;
+      padding: 1rem  1.0rem 0 1rem;
+      margin:  0;
+      
+    }
+  }
 }
 
 .buttonStyle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media @mobile {
+    width: 100%;
+    }
 }
 
 button {
@@ -63,6 +150,7 @@ button {
   display: flex;
   align-items: center;
   margin: 2%;
+  
  
   a{
     color: white;
