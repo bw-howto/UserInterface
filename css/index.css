@@ -198,6 +198,13 @@ img {
   background-color: #DE6E4B;
   width: 100%;
 }
+.headerBackground a {
+  text-decoration: none;
+  color: white;
+}
+.headerBackground .logo {
+  color: white;
+}
 .toppart {
   display: flex;
   justify-content: space-between;
@@ -220,7 +227,7 @@ img {
 }
 .toppart .logo {
   font-size: 3.6rem;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
 .toppart nav {
@@ -233,6 +240,9 @@ img {
   .toppart nav {
     width: 95%;
     padding-bottom: 2%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
   }
 }
 .toppart nav a {
@@ -242,13 +252,18 @@ img {
 .toppart nav a:hover {
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  .toppart nav a {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+}
 .DL {
   border-top: 2px dashed silver;
   width: 100%;
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
   background: #F9DEC9;
   display: flex;
   flex-direction: column;
@@ -295,43 +310,260 @@ img {
   font-size: 1.3rem;
   padding: 1rem;
 }
-
-hr {
-  margin-bottom: 40px;
-  margin-top: 40px;
+@media (max-width: 500px) {
+  .footer p {
+    width: 80%;
+  }
 }
-header {
-  margin-top: 40px;
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
-.missionSection {
-  margin-bottom: 40px;
+.container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .Whydoyouneedlifehacks {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
+Section {
+  display: flex;
+  align-content: space-between;
+}
+@media (max-width: 500px) {
+  Section {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0;
+  }
+  Section h1,
+  Section h2,
+  Section p {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+}
+Section .left {
+  width: 45%;
+  padding: 1rem;
+  margin-left: 2%;
+}
+@media (max-width: 500px) {
+  Section .left {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+}
+Section .right {
+  width: 45%;
+  padding: 1rem;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  Section .right {
+    width: 100%;
+    padding: 0 0rem;
+    margin-left: 0;
+  }
+  Section .right img {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  Section .Whydoyouneedlifehacks {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+hr {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+@media (max-width: 500px) {
+  hr {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+header {
+  margin-top: 0;
+}
+header h1 {
+  margin: 1rem 0;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header h1,
+  header p {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+  }
+}
+.missionSection {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .missionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-top: dashed 2px gray;
+  }
+  .missionSection h1,
+  .missionSection h2,
+  .missionSection p {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+  }
 }
 .buttonStyle {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .buttonStyle {
+    width: 100%;
+  }
+}
 button {
   background-color: #3A405A;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 2 rem;
   display: flex;
   align-items: center;
-
-
-@media (max-width: 500px) {
-
-  .footer p {
-    width: 80%;
-  }
+  margin: 2%;
+}
+button a {
+  color: white;
+  text-decoration: none;
 }
 .container .home section {
   border: 5rem;
-
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+.ourTeamSection {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.ourTeamSection p {
+  font-weight: normal;
+}
+.container.our-team .theTeamList {
+  border-top: dashed gray 1px;
+  border-bottom: dashed gray 1px;
+  padding-top: 8%;
+}
+.container.our-team .theTeamList div {
+  padding-bottom: 8%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.container.our-team .theTeamList img {
+  width: 35%;
+}
+.container.our-team div {
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container.our-team div div {
+  border-bottom: dashed gray 1px;
+}
+.container.our-team div div.BT {
+  border-bottom: none;
+}
+.container.our-team div p,
+.container.our-team div h1,
+.container.our-team div h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  padding: 2rem 0rem;
+}
+.container.our-team div h3 {
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 2rem;
+}
+.container.our-team div button {
+  width: 100%;
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-decoration: none;
+}
+.container.our-team div button a,
+.container.our-team div button i {
+  text-decoration: none;
+}
+.container.our-team div button i {
+  margin: 0 1rem 0 0;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.container.our-team div button:hover {
+  color: #3A405A;
+  background-color: white;
+  border: 1px #3A405A solid;
+  text-decoration: none!important;
+}
+.container.our-team div button:hover a,
+.container.our-team div button:hover i {
+  text-decoration: none!important;
+}
+.container.our-team div h2 {
+  font-size: 2rem;
+}
+.container.our-team div h3 {
+  font-size: 1.5rem;
 }
