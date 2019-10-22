@@ -307,6 +307,13 @@ img {
     width: 80%;
   }
 }
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -367,8 +374,42 @@ button a {
   border: 5rem;
 }
 .ourTeamSection {
-  margin-top: 40px;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.theTeamList div {
-  margin-bottom: 100px;
+.ourTeamSection p {
+  font-weight: normal;
+}
+.container.our-team .theTeamList {
+  border-top: dashed gray 1px;
+  border-bottom: dashed gray 1px;
+}
+.container.our-team div {
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container.our-team div p,
+.container.our-team div h1,
+.container.our-team div h2,
+.container.our-team div h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  padding: 2rem 0rem;
+}
+.container.our-team div button {
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  padding: 1.5rem 2rem;
+}
+.container.our-team div h2 {
+  font-size: 2rem;
+}
+.container.our-team div h3 {
+  font-size: 1.5rem;
 }
