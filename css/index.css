@@ -373,8 +373,15 @@ button a {
 .container .home section {
   border: 5rem;
 }
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
 .ourTeamSection {
-  margin-top: 4rem;
+  margin: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,6 +393,17 @@ button a {
 .container.our-team .theTeamList {
   border-top: dashed gray 1px;
   border-bottom: dashed gray 1px;
+  padding-top: 8%;
+}
+.container.our-team .theTeamList div {
+  padding-bottom: 8%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.container.our-team .theTeamList img {
+  width: 35%;
 }
 .container.our-team div {
   margin: 8%;
@@ -394,18 +412,49 @@ button a {
   align-items: center;
   text-align: center;
 }
+.container.our-team div div {
+  border-bottom: dashed gray 1px;
+}
+.container.our-team div div.BT {
+  border-bottom: none;
+}
 .container.our-team div p,
 .container.our-team div h1,
-.container.our-team div h2,
-.container.our-team div h3 {
+.container.our-team div h2 {
   font-family: 'Merriweather', serif;
   font-weight: normal;
   padding: 2rem 0rem;
 }
+.container.our-team div h3 {
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 2rem;
+}
 .container.our-team div button {
+  width: 100%;
   font-family: 'Merriweather', serif;
   font-weight: normal;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  text-decoration: none;
+}
+.container.our-team div button a,
+.container.our-team div button i {
+  text-decoration: none;
+}
+.container.our-team div button i {
+  margin: 0 1rem 0 0;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.container.our-team div button:hover {
+  color: #3A405A;
+  background-color: white;
+  border: 1px #3A405A solid;
+  text-decoration: none!important;
+}
+.container.our-team div button:hover a,
+.container.our-team div button:hover i {
+  text-decoration: none!important;
 }
 .container.our-team div h2 {
   font-size: 2rem;
